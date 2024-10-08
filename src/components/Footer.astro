@@ -1,0 +1,16 @@
+---
+const today = new Date();
+import SocialLinks from "./SocialLinks.astro";
+---
+
+<footer class="text-stone-900">
+	&copy; {today.getFullYear()} TEKAA HOME SOLUTIONS. All rights reserved.
+	<SocialLinks></SocialLinks>
+</footer>
+<style>
+	footer {
+		padding: 2em 1em 6em 1em;
+		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		text-align: center;
+	}
+</style>

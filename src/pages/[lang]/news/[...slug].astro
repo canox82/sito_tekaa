@@ -1,0 +1,32 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+
+
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('news');
+
+  const paths = pages.map(page => {
+    const [lang, ...slug] = page.slug.split('/');
+    return { params: { lang, slug: slug.join('/') || undefined }, props: page };
+  });
+
+  return paths;
+}
+
+const { lang, slug } = Astro.params;
+const page = Astro.props;
+const formattedDate = page.data.date.toLocaleString(lang);
+
+const { Content } = await page.render();
+---
+<Layout titolo="TEKAA HOME SOLUTIONS">
+  <div>
+    <h1 class="text-white text-2xl uppercase">{page.data.title}</h1>
+    <p class="text-white text-lg">by {page.data.author} • {formattedDate}</p>
+    <div class="text-base">
+      <Content/>
+    </div>
+  </div>
+</Layout>

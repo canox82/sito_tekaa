@@ -1,0 +1,30 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../../../components/FormattedDate.astro';
+
+const posts = await getCollection('news',({ id }) => {return id.startsWith('en/')});
+
+import { getLangFromUrl } from '../../../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+---
+
+<Layout titolo="TEKAA HOME SOLUTIONS">
+	<section>
+		<ul class=>
+			{
+				posts.map((post) => (
+					<li class="text-sm">
+						<a href={`./${post.slug.substring(3)}/`}>
+							<h4 class="title text-white">{post.data.title}</h4>
+							<p class="date">
+								<FormattedDate date={post.data.date} />
+							</p>
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</section>
+</Layout>
