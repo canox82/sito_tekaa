@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro"
+import SocialLinks from "../components/SocialLinks.astro"
+---
+
+<Layout titolo="TEKAA HOME SOLUTIONS">
+	<div class="flex justify-center">
+		<div class="bg-white w-4/5 rounded p-4">
+			Compila il modulo per richiedere informazioni <br />
+				<form  class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" action="#" method="post">
+					<label class="block text-gray-700 text-sm font-bold mb-2">
+					Nome:
+					<input 
+						class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username"
+						type="text" 
+						name="name" 
+						aria-label="Nome o Azienda" 
+						placeholder="Nome e Cognome" 
+						id="name" 
+						required />
+					</label>
+					<br />
+					<label class="block text-gray-700 text-sm font-bold mb-2">
+					Email:
+					<input
+						class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username"
+						type="email" 
+						name="email" 
+						aria-label="Email" 
+						placeholder="nome@mail.com" 
+						id="email" 
+						required />
+					</label>
+					<br />
+					<label class="block text-gray-700 text-sm font-bold mb-2">
+						Numero di telefono:
+						<input  
+							class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username"
+							type="text" 
+							name="telefono" 
+							aria-label="Telefono" 
+							placeholder="Telefono" 
+							id="telefono" 
+							required />
+					</label>
+					<br />
+					<label class="block text-gray-700 text-sm font-bold mb-2">
+						Richiesta:
+						<br />
+						<textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" id="richiesta" name="richiesta" rows="5" required />
+					</label>
+					<br />
+					<button>Invia</button>
+				</form>
+				<SocialLinks></SocialLinks>
+		</div>
+	</div>
+	
+
+</Layout>
