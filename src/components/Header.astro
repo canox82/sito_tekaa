@@ -12,8 +12,8 @@ const t = useTranslations(lang);
 
 <header>
 	<nav>
-		<h2><a href={`/sito_tekaa/${lang}/`}><img class="h-16 w-auto" src="/sito_tekaa/img/logo_tekaa.png" alt="TEKAA HOME SOLUTIONS"></a></h2>
-		<div class="internal-links">
+		<h2><a href={`/sito_tekaa/${lang}/`}><img class="w-24 h-auto md:w-44" src="/sito_tekaa/img/logo_tekaa.png" alt="TEKAA HOME SOLUTIONS"></a></h2>
+		<div class="internal-links text-base md:text-xl">
 			<HeaderLink href={`/sito_tekaa/${lang}/`}>{t('nav.home')}</HeaderLink>
 			<HeaderLink href={`/sito_tekaa/${lang}/news/`}>{t('nav.blog')}</HeaderLink>
 			<HeaderLink href={`/sito_tekaa/${lang}/about/`}>{t('nav.about')}</HeaderLink>
@@ -46,7 +46,7 @@ const t = useTranslations(lang);
 		justify-content: space-between;
 	}
 	nav a {
-		padding: 1em 0.5em;
+		padding: 0.2em 0.2em;
 		color: var(--black);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
