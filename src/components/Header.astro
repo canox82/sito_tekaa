@@ -17,6 +17,9 @@ const t = useTranslations(lang);
 			<HeaderLink href={`/sito_tekaa/${lang}/`}>{t('nav.home')}</HeaderLink>
 			<HeaderLink href={`/sito_tekaa/${lang}/news/`}>{t('nav.blog')}</HeaderLink>
 			<HeaderLink href={`/sito_tekaa/${lang}/about/`}>{t('nav.about')}</HeaderLink>
+			{lang=="it" &&
+				<HeaderLink href={`/sito_tekaa/${lang}/cowork/`}>{t('nav.coworking')}</HeaderLink>
+			}
 		</div>
 		<LangSelector></LangSelector>
 		<div class="social-links">
