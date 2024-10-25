@@ -1,0 +1,67 @@
+---
+import Layout from "../../layouts/Layout.astro"
+---
+
+<Layout titolo="TEKAA HOME SOLUTIONS">
+	<h1 class="text-xl text-white text-center">CONTACTS</h1>
+	<p class="text-base">
+		You can find us in our Showroom in Montecavolo (RE) on via Togliatti 50/a, a few kilometers from Reggio Emilia towards the hills.
+	</p>
+	<div class="h-auto mx-auto w-11/12 md:w-2/5">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.567904581205!2d10.561872476767894!3d44.643332271072424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478004bce21d9af3%3A0x5a3144f400d3e11a!2sVia%20P.%20Togliatti%2C%2050%2C%2042020%20Quattro%20Castella%20RE!5e1!3m2!1sit!2sit!4v1729849002773!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+	<br />
+	<p class="text-base">
+		<span class="text-bold">TELEPHONE:</span><span> 123456789</span><br/>
+		<span class="text-bold">E-MAIL:</span><span> info@tekaa.it</span><br/>
+	</p>
+	<br />
+
+	<!-- FORM CONTATTI -->
+	<form  class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 mx-auto w-11/12 md:w-3/5 " action="#" method="post">
+		<label class="block text-gray-700 text-sm font-bold mb-2">
+		Name:
+		<input 
+			class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username"
+			type="text" 
+			name="name" 
+			aria-label="Nome o Azienda" 
+			placeholder="Nome e Cognome" 
+			id="name" 
+			required />
+		</label>
+		<br />
+		<label class="block text-gray-700 text-sm font-bold mb-2">
+		E-mail:
+		<input
+			class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username"
+			type="email" 
+			name="email" 
+			aria-label="Email" 
+			placeholder="nome@mail.com" 
+			id="email" 
+			required />
+		</label>
+		<br />
+		<label class="block text-gray-700 text-sm font-bold mb-2">
+			Telephone number:
+			<input  
+				class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username"
+				type="text" 
+				name="telefono" 
+				aria-label="Telefono" 
+				placeholder="Telefono" 
+				id="telefono" 
+				required />
+		</label>
+		<br />
+		<label class="block text-gray-700 text-sm font-bold mb-2">
+			Request:
+			<br />
+			<textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" id="richiesta" name="richiesta" rows="5" required />
+		</label>
+		<br />
+		<button class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Submit</button>
+	</form>
+	
+</Layout>

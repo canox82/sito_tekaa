@@ -13,6 +13,7 @@ export const languages = {
         'nav.about': 'Su di noi',
         'nav.coworking': 'Coworking',
         'nav.projects': 'Progetti',
+        'nav.contact': 'Contatti'
       },
     en: {
       'nav.home': 'Home',
@@ -20,6 +21,7 @@ export const languages = {
       'nav.about': 'About Us',
       'nav.coworking': 'Coworking',
       'nav.projects': 'Projects',
+      'nav.contact': 'Contacts'
     },
     de: {
         'nav.home': 'Home',
@@ -27,5 +29,6 @@ export const languages = {
         'nav.about': 'Uber uns',
         'nav.coworking': 'Coworking',
         'nav.projects': 'Projekte',
+        'nav.contact': 'Kontakts'
       },
   } as const;
