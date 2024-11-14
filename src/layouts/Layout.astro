@@ -5,8 +5,8 @@ interface Props {
 
 const { titolo } = Astro.props;
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Header from '../components/Header_black.astro';
+import Footer from '../components/Footer_black.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 import '../styles/global.css';
 import {SEO} from 'astro-seo';
@@ -38,11 +38,13 @@ const lang = getLangFromUrl(Astro.url);
 		<title>{titolo}</title>
 	</head>
 	<body>
-        <div class="bg-stone-800">
-        <Header />
-		<main class="w-screen text-white md:w-4/5 mx-auto py-5">
-            <slot />
-        </main>
+        <div class="flex flex-col min-h-screen bg-white">
+			<div class="bg-stone-800">
+				<Header/>
+			</div>
+			<main class="w-screen md:w-4/5 mx-auto py-5">
+				<slot />
+			</main>
 		<Footer />
         </div>
 	</body>
