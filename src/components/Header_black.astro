@@ -10,7 +10,7 @@ const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<header class="w-full">
+<header class="w-full bg-stone-800">
 	<nav>
 		<h2><a href={`/sito_tekaa/${lang}/`}><img class="w-24 h-auto md:w-44" src="/sito_tekaa/img/logo_tekaa.png" alt="TEKAA HOME SOLUTIONS"></a></h2>
 		<div class="flex justify-evenly internal-links text-base tekaa uppercase font-semibold md:text-3xl md:w-3/5 ">
@@ -34,8 +34,6 @@ const t = useTranslations(lang);
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
 	h2 {
 		margin: 0;
