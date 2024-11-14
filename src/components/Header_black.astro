@@ -13,13 +13,13 @@ const t = useTranslations(lang);
 <header class="w-full bg-stone-800">
 	<nav>
 		<h2><a href={`/sito_tekaa/${lang}/`}><img class="w-24 h-auto md:w-44" src="/sito_tekaa/img/logo_tekaa.png" alt="TEKAA HOME SOLUTIONS"></a></h2>
-		<div class="flex justify-evenly internal-links text-base tekaa uppercase font-semibold md:text-3xl md:w-3/5 ">
+		<div class="flex justify-evenly internal-links text-xs tekaa uppercase font-semibold md:text-3xl md:w-3/5 ">
 			<HeaderLink href={`/sito_tekaa/${lang}/projects/`} >{t('nav.projects')}</HeaderLink>
 			<HeaderLink href={`/sito_tekaa/${lang}/about/`} >{t('nav.about')}</HeaderLink>
 			<HeaderLink href={`/sito_tekaa/${lang}/news/`} >{t('nav.blog')}</HeaderLink>
 		</div>
 		<LangSelector></LangSelector>
-		<div class="internal-links text-base tekaa uppercase font-semibold md:text-3xl">
+		<div class="internal-links text-xs tekaa uppercase font-semibold md:text-3xl">
 			<HeaderLink href={`/sito_tekaa/${lang}/contatti/`}>{t('nav.contact')}</HeaderLink>
 		</div>
 	</nav>
