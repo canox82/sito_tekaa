@@ -1,77 +1,11 @@
 ---
 import Layout from "../../layouts/Layout.astro"
-
-const projects = [
-  {
-    title: "Test_01",
-    bgImage:
-      "/sito_tekaa/blog-placeholder-1.jpg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut	labore et dolore magna aliqua.",
-    bgColor: "bg-white/30 backdrop-blur",
-  },
-  {
-    title: "Test_02",
-    bgImage:
-      "/sito_tekaa/blog-placeholder-2.jpg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut	labore et dolore magna aliqua.",
-    bgColor: "bg-white/30 backdrop-blur",
-  },
-  {
-    title: "Test_03",
-    bgImage:
-      "/sito_tekaa/blog-placeholder-3.jpg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut	labore et dolore magna aliqua.",
-    bgColor: "bg-white/30 backdrop-blur",
-  },
-  {
-    title: "Test_04",
-    bgImage:
-      "/sito_tekaa/blog-placeholder-4.jpg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut	labore et dolore magna aliqua.",
-    bgColor: "bg-white/30 backdrop-blur",
-  },
-  {
-    title: "Test_05",
-    bgImage:
-      "/sito_tekaa/blog-placeholder-5.jpg",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut	labore et dolore magna aliqua.",
-    bgColor: "bg-white/30 backdrop-blur",
-  },
-];
 ---
 
 <Layout titolo="TEKAA HOME SOLUTIONS">
 	<div class="text-base w-4/5">
 		<p>
-			I nostri progetti più significativi
+			Work in progress...
 		</p>
-        <br />
-        <div class="flex flex-wrap w-4/5 mx-auto md:flex-nowrap mt-6 pt-12 ">
-            {
-              projects.map((project, index) => (
-                <>
-                  <div class="relative flex flex-col items-start m-1 transition  ease-in-out duration-500  delay-150 transform  md:w-96 md:-ml-32 md:hover:-translate-x-32 md:hover:-translate-y-8 shrink-0 ">
-                    <article
-                      class="mx-auto rounded-3xl overflow-hidden bg-cover ring-2 ring-inset ring-white/50 bg-center min-h-150 relative   transform duration-500   group"
-                      style={`background-image: url('${project.bgImage}');`}>
-                      <div
-                        class={` relative h-full  group-hover:bg-opacity-0 min-h-150  flex flex-wrap flex-col pt-[30rem]  transform duration-500`}>
-                        <div class=" group-hover:bg-black/30 duration-500 group-hover:backdrop-blur p-8 lg:p-10 h-full justify-end flex flex-col ">
-                          <p class="opacity-0 text-white text-sm 2xl:text-lg group-hover:opacity-80 transform duration-500 ">
-                            {project.description}
-                          </p>
-                        </div>
-                      </div>
-                    </article>
-                  </div>
-                </>
-              ))
-            }
-        </div>
 	</div>
 </Layout>

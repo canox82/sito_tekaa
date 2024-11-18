@@ -8,8 +8,8 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://canox82.github.io',
-    base: 'sito_tekaa',
+    site: 'www.tekaa.it',
+    base: '',
     integrations: [mdx(), sitemap(), tailwind()],
     i18n: {
         defaultLocale: "it",

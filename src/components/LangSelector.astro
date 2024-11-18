@@ -4,7 +4,7 @@ import { languages } from '../i18n/ui';
 <ul class="gap-2 flex flex-col justify-center items-center">
   {Object.entries(languages).map(([lang, label]) => (
     <li>
-      <a class="uppercase tekaa text-xs md:text-sm" href={`/sito_tekaa/${lang}/`}>{label.substring(0,2)}</a>
+      <a class="uppercase tekaa text-xs md:text-sm" href={`/${lang}/`}>{label.substring(0,2)}</a>
     </li>
   ))}
 </ul>
