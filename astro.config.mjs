@@ -10,7 +10,6 @@ import tailwind from '@astrojs/tailwind';
 export default defineConfig({
     site: 'http://www.tekaa.it',
     base: '/',
-    output: 'hybrid',
     integrations: [mdx(), sitemap(), tailwind()],
     i18n: {
         defaultLocale: "it",
